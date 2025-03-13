@@ -43,6 +43,7 @@
             cursor: pointer;
             transition: 0.3s;
             transition: transform 0.3s ease;
+            margin-left: 10%;
         }
 
         .menu a {
@@ -236,7 +237,7 @@
     <div class="menu">
         <div class="logo">
             <a href="index.jsp">
-                <img src="imagens/Logo.png" class="btn-logo">
+                <img src="img/LOGOTR.png" class="btn-logo">
             </a>
         </div>
 
@@ -262,7 +263,6 @@
     <p style="color: red;"><%= request.getAttribute("erro") %></p>
     <% } %>
     <form action="cadastrar" method="post">
-
         <label for="nome">Nome:</label>
         <input type="text" name="nome" required placeholder="Digite seu nome"><br>
 
@@ -272,11 +272,10 @@
         <label for="senha">Senha:</label>
         <input type="password" name="senha" required placeholder="Digite sua senha"><br>
 
-        <label for="senha">Confirmar Senha:</label>
+        <label for="confirmarSenha">Confirmar Senha:</label>
         <input type="password" name="confirmarSenha" required placeholder="Confirme sua senha"><br>
 
-
-        <button type="submit">Cadastrar</button>
+         <button type="submit">Cadastrar</button>
     </form>
     <p>Clique aqui para fazer login: <a href="login.jsp">Fazer login</a></p>
 </div>

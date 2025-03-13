@@ -35,7 +35,6 @@
             justify-content: space-between;
             align-items: center;
             text-align: center;
-
         }
 
         .logo {
@@ -44,6 +43,7 @@
             cursor: pointer;
             transition: 0.3s;
             transition: transform 0.3s ease;
+            margin-left: 10%;
         }
 
         .menu a {
@@ -95,9 +95,16 @@
         .submenu-item:hover {
             background-color: #091F4C;
         }
+        .btnEntrar img{
+            width: 70px;
+        }
+        .btnEntrar {
+            margin-right: 10%;
+        }
 
         .btnEntrar a {
             padding-right: 50px;
+
         }
 
         .btn-img {
@@ -158,7 +165,7 @@
             box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
             text-align: center;
             width: 400px;
-            margin-top: 260px;
+            margin-top: 180px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -230,13 +237,13 @@
     <div class="menu">
         <div class="logo">
             <a href="index.jsp">
-                <img src="imagens/Logo.png" class="btn-logo">
+                <img src="img/LOGOTR.png" class="btn-logo">
             </a>
         </div>
 
         <div class="btnEntrar">
             <a href="index.jsp">
-                <img src="imagens/Entrar.png" class="btn-img">
+                <img src="img/homee.png" class="btn-img">
             </a>
         </div>
 
@@ -248,7 +255,7 @@
 
 
 <div class="login-container">
-    <h2>Criar minha conta</h2>
+    <h2>Fazer login</h2>
     <% if (request.getAttribute("mensagem") != null) { %>
     <p style="color: green;"><%= request.getAttribute("mensagem") %></p>
     <% } %>
@@ -263,12 +270,9 @@
         <label for="senha">Senha:</label>
         <input type="password" name="senha" required placeholder="Digite sua senha"><br>
 
-
-
-
         <button type="submit">Cadastrar</button>
     </form>
-    <p>Clique aqui para fazer login: <a href="login.jsp">Fazer login</a></p>
+    <p>Clique aqui para criar uma conta: <a href="cadastro.jsp">Criar conta</a></p>
 </div>
 <div class="rodape">
     <p>&copy; 2025 E-commerce de Jogos. Todos os direitos reservados.</p>

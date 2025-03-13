@@ -11,7 +11,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="https://images.lojanike.com.br/site/ni/favicon-32x32.png">
 
-    <title>NikeFake</title>
+    <title>GameShop</title>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -30,9 +30,8 @@
         .menu {
             width: 100%;
             background-color: #07183B;
-            padding: 50px;
+            padding: 20px;
             position: fixed;
-            top: 0;
             z-index: 100;
             left: 50%;
             transform: translateX(-50%);
@@ -42,8 +41,8 @@
         }
 
         .logo {
-            width: 50px;
-            height: 50px;
+            width: 400px;
+            height: 75px;
             cursor: pointer;
             transition: 0.3s;
             transition: transform 0.3s ease;
@@ -55,13 +54,8 @@
             text-decoration: none;
             font-size: 25px;
             transition: 0.3s;
-            padding: 10px;
+            padding: 20px;
         }
-
-        .links {
-            gap: 30px; /* Adiciona um espaço de 30px entre os itens */
-        }
-
         .links a {
             color: #fff;
             text-decoration: none;
@@ -77,27 +71,11 @@
         }
 
         .btn-logo {
-            width: 200px;
-            height: auto;
-            cursor: pointer;
-            transition: 0.3s;
-            transition: transform 0.3s ease;
-            left: 0;
+            width: 350px;
+            height: 100px;
         }
 
         .btn-logo:hover {
-            transform: translateY(-3px); /* Move o link para cima */
-        }
-
-        .btn-img {
-            width: 120px;
-            height: auto;
-            cursor: pointer;
-            transition: 0.3s;
-            transition: transform 0.3s ease;
-        }
-
-        .btn-img:hover {
             transform: translateY(-3px); /* Move o link para cima */
         }
 
@@ -109,18 +87,6 @@
             width: 70px;
         }
 
-
-        #img1{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 40vh;
-            z-index: -50;
-            background-color: rgb(0, 0, 0);
-
-        }
-
         #img1 img{
             width: 100%;
         }
@@ -129,7 +95,7 @@
             margin: 0 auto;
             max-width: 80%;
             background-color: white;
-            margin-top: 10%;
+            margin-top: 2%;
             padding: 20px 40px;
             border-radius: 10px;
         }
@@ -137,12 +103,15 @@
         .lista ul {
 
             display: inline;
+            text-align: center;
+            font-size: 10px;
         }
 
         .lista{
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            text-align: center;
         }
 
         .lista li {
@@ -209,6 +178,7 @@
             color: white;
             cursor: pointer;
             transition: ease .2s;
+            justify-content: center;
         }
 
         .btn:hover{
@@ -228,13 +198,6 @@
             display: none;
             min-height: 700px;
         }
-
-
-    .config-login{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
         #qtdCarrinho{
             position: relative;
             top: -77px;
@@ -291,13 +254,9 @@
             margin-top: 2px;
         }
 
-        #comprados{
-            width: 80%;
-            height: 100px;
-        }
-
         button[value=finalizar]{
             position: fixed;
+            margin-left: 800px;
             bottom: 5%;
             left: 10%;
         }
@@ -328,26 +287,20 @@
         header{
             height: 80px;
         }
-
-        .fixed-menu{
-            display: flex;
-            flex-direction: column;
-            position: fixed !important;
-            top: 5% !important;
-            right: 7% !important;
-        }
-
         .fixed-menu img{
             margin-bottom: 10px;
+        }
+        .btnVoltar{
+            margin-left: 100px;
         }
 
         footer{
             margin-top: 120px;
-            height: unset;
+            height: 50px;
             width: 100%;
 
             justify-content: center;
-            background-color: black;
+            background-color: #07183B;
             color: white;
             padding-bottom: 30px;
 
@@ -357,8 +310,22 @@
             text-align: center;
         }
 
-        #logo-footer{
-            height: 100px;
+        .rodape {
+            background-color: #07183B;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .prod {
+            text-align: center;
+            font-size: 25px;
+            color: #05122d;
+            padding-bottom: 20px;
+            padding-top: 10px;
         }
 
 
@@ -368,34 +335,34 @@
 <body>
 
 
-    <header>
+<header>
 
 
 
-        <div class="menu">
-            <div class="logo">
-                <a href="index.jsp">
-                    <img src="imagens/Logo.png" class="btn-logo">
-                </a>
-            </div>
+    <div class="menu">
+        <div class="logo">
+            <a href="index.jsp">
+                <img src="img/LOGOTR.png" class="btn-logo">
+            </a>
+        </div>
 
         <div class="flex">
-                <div class="icon-container">
-                    <a href="cadastro.jsp">
-                        <img class="icon" id="iconlogin" src="img/homee.png" ">
-                    </a>
-                </div>
-                <div class="iconCarrinho1">
-                    <img id="iconCarrinho" class="icon" src="img/carrinho.png">
-                    <h2 id="qtdCarrinho">0</h2>
-                </div>
+            <div class="icon-container">
+                <a href="login.jsp">
+                    <img class="icon" id="iconlogin" src="img/homee.png" ">
+                </a>
+            </div>
+            <div class="iconCarrinho1">
+                <img id="iconCarrinho" class="icon" src="img/carrinho.png">
+                <h2 id="qtdCarrinho">0</h2>
             </div>
         </div>
+    </div>
 
 
 
 
-        </div>
+    </div>
 
 
 
@@ -403,12 +370,12 @@
 
 
 
-    </header>
-    <div id="view">
+</header>
+<div id="view">
 
     <div id="produtos">
-        <div id="carrinhoTopo">
-            <h1>Produtos</h1>
+        <div id="carrinhoTopo" class="prod">
+            <h1>GAMES</h1>
         </div>
         <ul id="listaProdutos" class="lista">
 
@@ -424,9 +391,8 @@
         <ul id="listaCarrinho" class="lista">
 
         </ul>
+        <button class="btn" value="finalizar" onclick="window.location.href='pagamento.jsp'">Comprar</button>
 
-
-        <button class="btn" value="finalizar">Finalizar</button>
     </div>
 
     <div class="finalizado">
@@ -444,8 +410,10 @@
 
 <footer>
 
-    <img id="logo-footer" src="img/logo-pequena.png">
-    <p>TRABALHO DE DESENVOLVIMENTO WEB - LOJA DE GAMES</p>
+    <div class="rodape">
+        <p>&copy; 2025 E-commerce de Jogos. Todos os direitos reservados.</p>
+        <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a>
+    </div>
 
 
 </footer>
@@ -465,40 +433,41 @@
     var img4 = "img/gta6.png";
     var img5 = "img/spider.png";
     var img6 = "img/detroid.png";
-    var img7 = "img/fifa2025.png";
-    var img8 = "img/rdr.png";
-    var img9 = "img/minecraft.png";
-    var img10 = "img/gta6.png";
-    var img11 = "img/spider.png";
-    var img12 = "img/detroid.png";
+    var img7 = "img/BF1.png";
+    var img8 = "img/Elden_Ring_capaa.jpg";
+    var img9 = "img/batman.jpg";
+    var img10 = "img/gta.png";
+    var img11 = "img/cyberpunk2077.jpg";
+    var img12 = "img/stardewV.jpg";
 
     var valorTotal = 0.0;
 
     var lista = [
         { "img": img1, "info": "EA SPORTS FC 25", "valor": 89.70, "qtd": 1, "valorTotal": 89.70, "status": 1 },
-        { "img": img2, "info": "Red Dead Redemption 2 '07", "valor": 249.99, "qtd": 1, "valorTotal": 249.99, "status": 1 },
+        { "img": img2, "info": "Red Dead Redemption 2", "valor": 249.99, "qtd": 1, "valorTotal": 249.99, "status": 1 },
         { "img": img3, "info": "MINECRAFT", "valor": 199.99, "qtd": 1, "valorTotal": 199.99, "status": 1 },
         { "img": img4, "info": "Grand Theft Auto VI", "valor": 999.99, "qtd": 1, "valorTotal": 999.99, "status": 1 },
         { "img": img5, "info": "Marvel's Spider-Man 2", "valor": 249.99, "qtd": 1, "valorTotal": 249.99, "status": 1 },
         { "img": img6, "info": "Detroit: Become Human", "valor": 39.99, "qtd": 1, "valorTotal": 39.99, "status": 1 },
-        { "img": img7, "info": "EA SPORTS FC 25", "valor": 89.70, "qtd": 1, "valorTotal": 89.70, "status": 1 }, // Adicionei a vírgula aqui
-        { "img": img8, "info": "Red Dead Redemption 2 '07", "valor": 249.99, "qtd": 1, "valorTotal": 249.99, "status": 1 }, // E aqui
-        { "img": img9, "info": "MINECRAFT", "valor": 199.99, "qtd": 1, "valorTotal": 199.99, "status": 1 }, // E aqui
-        { "img": img10, "info": "Grand Theft Auto VI", "valor": 999.99, "qtd": 1, "valorTotal": 999.99, "status": 1 }, // E aqui
-        { "img": img11, "info": "Marvel's Spider-Man 2", "valor": 249.99, "qtd": 1, "valorTotal": 249.99, "status": 1 }, // E aqui
-        { "img": img12, "info": "Detroit: Become Human", "valor": 39.99, "qtd": 1, "valorTotal": 39.99, "status": 1 } // E aqui
+        { "img": img7, "info": "Battlefield 1", "valor": 250, "qtd": 1, "valorTotal": 250, "status": 1 }, // Adicionei a vírgula aqui
+        { "img": img8, "info": "Elden Ring", "valor": 249.99, "qtd": 1, "valorTotal": 249.99, "status": 1 }, // E aqui
+        { "img": img9, "info": "Batman", "valor": 99.99, "qtd": 1, "valorTotal": 99.99, "status": 1 }, // E aqui
+        { "img": img10, "info": "Grand Theft Auto V", "valor": 555.99, "qtd": 1, "valorTotal": 555.99, "status": 1 }, // E aqui
+        { "img": img11, "info": "Cyberpunk2077", "valor": 299.99, "qtd": 1, "valorTotal": 299.99, "status": 1 }, // E aqui
+        { "img": img12, "info": "Stardew Valley", "valor": 24.99, "qtd": 1, "valorTotal": 24.99, "status": 1 } // E aqui
     ];
+
     var carrinho = []
 
     lista.forEach(coisas => {
-        $('#listaProdutos').append('<li><div id="imgcard"><img src="' + coisas.img + '"></div> <p class="info">' + coisas.info + '</p><p class="valor">R$' + coisas.valor + '</p><button class="btn" value="comprar">adicionar</button></li>')
+        $('#listaProdutos').append('<li><div id="imgcard"><img src="' + coisas.img + '"></div> <p class="info">' + coisas.info + '</p><p class="valor">R$' + coisas.valor + '</p><button class="btn" value="comprar">Adicionar</button></li>')
         chamarBotao()
     });
 
     function listar(){
         $("#listaCarrinho li").remove()
         carrinho.forEach(produto => {
-            $('#listaCarrinho').append('<li><img src="' + produto.img + '"><p class="info">' + produto.info + '</p><div class="valor"><p class="qnt">'+ produto.qtd +'</p><p class="valorAtual">x R$' + produto.valor + '</p></div><div><button class="btn" value="subtrair">-1</button><button class="btn" value="excluir">excluir</button><button class="btn" value="adicionar">+1</button></div></li>')
+            $('#listaCarrinho').append('<li><img src="' + produto.img + '"><p class="info">' + produto.info + '</p><div class="valor"><p class="qnt">'+ produto.qtd +'</p><p class="valorAtual">x R$' + produto.valor + '</p></div><div><button class="btn" value="subtrair">-1</button><button class="btn" value="excluir">excluir</button><button class="btn" value="Adicionar">+1</button></div></li>')
         })
         $('#qtdCarrinho').text(carrinho.length)
 
@@ -542,15 +511,8 @@
 
         })
 
-        $("button[value=finalizar]").on("click", function(){
-            if(valorTotal>0){
-                $("#listaCarrinho").hide()
-                $(".finalizado").fadeIn()
-                $(".finalizado").css("display","flex")
-            }
-        })
 
-        $("button[value=adicionar]").on("click", function(){
+        $("button[value=Adicionar]").on("click", function(){
             var index = $(this).closest('li').index()
 
             carrinho[index].qtd++
